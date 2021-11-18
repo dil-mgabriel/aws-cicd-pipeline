@@ -20,9 +20,9 @@ terraform {
     dynamodb_table = "terraform-lock-file"
     key = "path/terraform.tfstate"
     region = "us-east-1"
-    access_key = export AWS_ACCESS_KEY_ID
-    secret_key = export AWS_SECRET_ACCESS_KEY
-    token = export AWS_SESSION_TOKEN
+    access_key = ${export AWS_ACCESS_KEY_ID}
+    secret_key = ${export AWS_SECRET_ACCESS_KEY}
+    token = ${export AWS_SESSION_TOKEN}
     }
 }
 
