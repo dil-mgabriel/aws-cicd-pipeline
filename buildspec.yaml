@@ -1,11 +1,10 @@
 version: 0.2
 
 env:
-  shell: shell-tag
   parameter-store:
-    AWS_Access_Key_Id : "$Access_Key"
-    AWS_Secret_access_key : "$Secret_key"
-    AWS_session_token : "$token"
+    AWS_Access_Key_Id : "$Access_Key_Id"
+    AWS_Secret_access_key : "$Secret_access_key"
+    AWS_session_token : "$session_token"
     
 
 phases:
