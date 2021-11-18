@@ -2,6 +2,7 @@ version: 0.2
 
 env:
   parameter-store:
+    ASSUME_ROLE_ARN : "arn:aws:iam::117005682321:role/ssm_get_parameter"
     AWS_Access_Key_Id : "$Access_Key_Id"
     AWS_Secret_access_key : "$Secret_access_key"
     AWS_session_token : "$session_token"
