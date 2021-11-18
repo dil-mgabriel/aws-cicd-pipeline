@@ -15,5 +15,8 @@ terraform {
         dynamodb_table = "terraform-lock-file"
         key = "path/terraform.tfstate"
         region = var.aws_region
+        access_key = {{ssm:Access_Key_Id}}
+        secret_key = {{ssm:Secret_access_key}}
+        session_token = {{ssm:session_token}}
     }
 }

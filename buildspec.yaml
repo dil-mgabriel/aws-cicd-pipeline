@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Entered the install terraform
+      - "apt-get install zip unzip -y" # install unzip
+      - "wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip"
+      - "unzip terraform_0.11.14_linux_amd64.zip"
+      -  "mv terraform /usr/local/bin/"
+
+  pre_build:
+    commands:
+      - terraform --version
+      - terraform init 
+    
+
+  build:
+    commands:
+      - terraform $TF_COMMAND -auto-approve
+
+  post_build:
+    commands:
+      - echo terraform $TF_COMMAND complete on 'date' 
+      - echo soho is having fun at Diligent    
