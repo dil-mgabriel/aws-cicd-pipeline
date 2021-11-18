@@ -2,9 +2,9 @@
 provider "aws" {
   region = "us-east-1"
   version = "v2.70.0"
-  access_key = "{{ssm:Access_Key_Id}}"
-  secret_key = "{{ssm:Secret_access_key}}"
-  session_token = "{{ssm:session_token}}"
+  access_key = $AWS_ACCESS_KEY_ID
+  secret_key = $AWS_SECRET_ACCESS_KEY
+  token = $AWS_SESSION_TOKEN
 
 }
 
