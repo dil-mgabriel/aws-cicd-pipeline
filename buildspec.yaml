@@ -12,7 +12,6 @@ phases:
   pre_build:
     commands:
       - terraform --version
-      - terraform import aws_ssm_parameter.my_param /session_token
       - terraform init 
     
 
