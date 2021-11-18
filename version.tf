@@ -17,6 +17,6 @@ terraform {
     region = "us-east-1"
     access_key = "{{ssm:Access_Key_Id}}"
     secret_key = "{{ssm:Secret_access_key}}"
-    session_token = "{{ssm:session_token}}"
+    # session_token = "{{ssm:session_token}}"
     }
 }
