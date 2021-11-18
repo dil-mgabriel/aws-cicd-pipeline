@@ -12,6 +12,9 @@ phases:
   pre_build:
     commands:
       - terraform --version
+      - AWS_Access_Key_Id = $Access_Key
+      - AWS_Secret_access_key = $Secret_key
+      - AWS_session_token = $token
       - terraform init 
     
 
