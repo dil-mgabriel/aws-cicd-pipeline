@@ -1,8 +1,8 @@
 #configure the AWS provider
 provider "aws" {
   region = "us-east-1"
-  access_key = "${data.aws_ssm_parameter.access_key.value}"
-  secret_key = "${data.aws_ssm_parameter.secret_key.value}"
+  access_key = "${data.aws_ssm_parameter.access_key_db123.value}"
+  secret_key = "${data.aws_ssm_parameter.secret_key_db123.value}"
   # session_token = data.aws_ssm_parameter.session_token.value
 
 }
@@ -26,11 +26,11 @@ terraform {
     }
 }
 
-data "aws_ssm_parameter" "access_key" {
+data "aws_ssm_parameter" "access_key_db123" {
   name = "/root/AWS_Access_Key_Id"
 }
 
-data "aws_ssm_parameter" "secret_key" {
+data "aws_ssm_parameter" "secret_key_db123" {
   name = "/root/AWS_Secret_access_key"
 }
 
