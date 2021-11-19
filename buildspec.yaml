@@ -1,10 +1,10 @@
 version: 0.2
 
-env:
-  parameter-store:
-    AWS_ACCESS_KEY_ID_PARAM: /root/AWS_Access_Key_Id
-    AWS_SECRET_ACCESS_KEY_PARAM: /root/AWS_Secret_access_key
-    # AWS_SESSION_TOKEN_PARAM: /root/AWS_session_token
+# env:
+#   parameter-store:
+#     AWS_ACCESS_KEY_ID_PARAM: /root/AWS_Access_Key_Id
+#     AWS_SECRET_ACCESS_KEY_PARAM: /root/AWS_Secret_access_key
+#     # AWS_SESSION_TOKEN_PARAM: /root/AWS_session_token
 
     
 phases:
@@ -15,7 +15,7 @@ phases:
       - "wget https://releases.hashicorp.com/terraform/1.1.0-alpha20211006/terraform_1.1.0-alpha20211006_linux_amd64.zip"
       - "unzip terraform_1.1.0-alpha20211006_linux_amd64.zip"
       - "mv terraform /usr/local/bin/"
-      - ASSUME_ROLE_ARN="arn:aws:iam::117005682321:role/pipeline_role"
+      # - ASSUME_ROLE_ARN="arn:aws:iam::117005682321:role/pipeline_role"
 
       
       
