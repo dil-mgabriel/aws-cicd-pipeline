@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-east-1"
   access_key = data.aws_ssm_parameter.access_key.value
   secret_key = data.aws_ssm_parameter.secret_key.value
-  token = data.aws_ssm_parameter.session_token.value
+  session_token = data.aws_ssm_parameter.session_token.value
 
 }
 
@@ -22,7 +22,7 @@ terraform {
     region = "us-east-1"
     access_key = data.aws_ssm_parameter.access_key.value
     secret_key = data.aws_ssm_parameter.secret_key.value
-    token = data.aws_ssm_parameter.session_token.value
+    session_token = data.aws_ssm_parameter.session_token.value
     }
 }
 
