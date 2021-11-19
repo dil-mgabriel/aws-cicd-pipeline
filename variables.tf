@@ -14,6 +14,6 @@ data "aws_ssm_parameter" "secret_key" {
   name = "Secret_access_key"
 }
 
-data "aws_ssm_parameter" "session_token" {
-  name = "session_token"
-}
+# data "aws_ssm_parameter" "session_token" {
+#   name = "session_token"
+# }
