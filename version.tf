@@ -1,9 +1,9 @@
 #configure the AWS provider
 provider "aws" {
   region = "us-east-1"
-  access_key = "$AWS_ACCESS_KEY_ID"
-  secret_key = "AWS_SECRET_ACCESS_KEY"
-  # token = $AWS_SESSION_TOKEN
+  access_key = data.aws_ssm_parameter.access_key.value
+  secret_key = data.aws_ssm_parameter.secret_key.value
+  token = data.aws_ssm_parameter.session_token.value
 
 }
 
@@ -20,9 +20,9 @@ terraform {
     dynamodb_table = "terraform-lock-file"
     key = "path/terraform.tfstate"
     region = "us-east-1"
-    access_key = "$AWS_ACCESS_KEY_ID"
-    secret_key = "$AWS_SECRET_ACCESS_KEY"
-    token = "$AWS_SESSION_TOKEN"
+    access_key = data.aws_ssm_parameter.access_key.value
+    secret_key = data.aws_ssm_parameter.secret_key.value
+    token = data.aws_ssm_parameter.session_token.value
     }
 }
 
