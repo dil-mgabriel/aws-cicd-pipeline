@@ -15,7 +15,7 @@ phases:
       - "wget https://releases.hashicorp.com/terraform/1.1.0-alpha20211006/terraform_1.1.0-alpha20211006_linux_amd64.zip"
       - "unzip terraform_1.1.0-alpha20211006_linux_amd64.zip"
       - "mv terraform /usr/local/bin/"
-      # - ASSUME_ROLE_ARN="arn:aws:iam::117005682321:role/ssm_get_parameter"
+      - ASSUME_ROLE_ARN="arn:aws:iam::117005682321:role/service-role/AWSCodePipelineServiceRole-us-east-1-pipeline-test"
 
       
       
