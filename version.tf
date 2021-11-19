@@ -20,8 +20,9 @@ terraform {
     dynamodb_table = "terraform-lock-file"
     key = "path/terraform.tfstate"
     region = "us-east-1"
-    # access_key = "${data.aws_ssm_parameter.access_key.value}"
-    # secret_key = "${data.aws_ssm_parameter.secret_key.value}"
+    role_arn      = "arn:aws:iam::117005682321:role/pipeline_role"
+    # access_key = data.aws_ssm_parameter.access_key.value
+    # secret_key = data.aws_ssm_parameter.secret_key.value
     # session_token = "${data.aws_ssm_parameter.session_token.value}"
     }
 }
