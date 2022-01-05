@@ -26,6 +26,10 @@ phases:
       # - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID_PARAM
       # - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY_PARAM
       # # - export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN_PARAM
+      
+      - aws_access_key_id=ASIARWPQVA2IUGTCQIPP
+      - aws_secret_access_key=0cIlYCd1ZhdyUnwFzRHYLCESaB3rWxIB7VWh+GM9
+      - aws_session_token=IQoJb3JpZ2luX2VjEIr//////////wEaCXVzLWVhc3QtMSJHMEUCIQD7YVlILll+oALsaiY7pwN/SRvXMVeTiUBHQDuA1gOXSgIgPCxnaPAYu4m+Pw20/xgp8jshZl8AH1+ayVIP+bXTwDoq+QIIk///////////ARAAGgwxMTcwMDU2ODIzMjEiDO/tby80i+RnvJL3mirNAsayWQcfFnZus0TNP99p0AQ/Lkht9T+MNWEOjm3oh/W3078C6819wqo2pkxIai9w+81jZeckF2eYSOJBne5ZpqVsOPYZ6V3V0S4+Pd0CRl6jzSR7FKmZFke3y+ohgVWgzpYKgswJYOrX2qyE3GY1TTtvfNSSK60xGbXLnndlWfniWDe+ei2dUuLyzbfU73O/9pyDGuRQZVWx/hJdY2kRHeV/gRXlAw9i3kDDn0jqgQITi2joBwH1aw0DBASyEKyZaiJDAlzfM7SJOddU2oEGOn0/fQfZ1BWRhGFP5FWvchKoZnrP+ZNmOMdn7g/6dgZNIOQ5rkmLXpofvJiybSjEAfLRrVNwxFbCaYxEuXeFbxztZEiSSzDA24zt1UqrhFuoiMizJdZxxKAku9loLRmj8RaPukB7VtriM/mL2/RbfwLxchHjj74HAWUcKCE6MjDisteOBjqnAcFel1fnUsUn8G23bPraSOsphxWbubehohr9Y7dR9nkA6lvXc+fxe0VkRGFCLwCmVumGlrDsTUG8BkNkfrs4kz8DrJ3pn167Xsz0EhW9P4Rlo9Vy1rpsPVLUNVBVNI4sbxWDBEy8ju1ZUN5dK13r83SGA6xM8flHh3Q/7sCwZWxe5n1ZK2vLu1NiCo/iSGg7+jfqlB8iNWRvPgLcfX1g0RIr34RBJO7z
       - terraform init 
     
 
